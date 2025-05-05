@@ -1,0 +1,43 @@
+
+
+<head>
+  <title>Dogs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <h1>Dogs!</h1>
+  <h3 style="text-align:center;"> drag the image to change</h3>
+
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul id="carousel" class="glide__slides"></ul>
+    </div>
+  </div>
+
+  <h2>Dog Breeds </h2>
+  <div id="breeds"></div>
+
+  <div id="breed-info" ></div>
+
+  <div id="audio-instructions" style="margin-top:30px;">
+    <p>Say “hello” → alerts Hello World</p>
+    <p>Say “change the color to insert color” → background turns color said</p>
+    <p>Say “navigate to page” → goes to said page</p>
+    <p>Say “Load Dog Breed name to load dog breed</p>
+    <button onclick="annyang.start()">Turn On Audio</button>
+    <button onclick="annyang.abort()">Turn Off Audio</button>
+  </div>
+</body>
+
