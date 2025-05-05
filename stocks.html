@@ -1,0 +1,37 @@
+
+<head>
+  <title>Stocks</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="annyang.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+  <h1>Stocks</h1>
+  <input id="ticker" placeholder="Enter Ticker">
+  <select id="days">
+   
+    <option value="30">30 Days</option>
+    <option value="60">60 Days</option>
+    <option value="90">90 Days</option>
+  </select>
+  <button class="custom" onclick="lookupStock()">Lookup Stock</button>
+  <canvas id="chart"></canvas>
+  <table id="top-stocks">
+    <tr><th>Ticker</th><th>Comments</th><th>Sentiment</th></tr>
+  </table>
+  <div id="audio-instructions">
+    <p>Say “hello” → alerts Hello World</p>
+    <p>Say “change the color to insert color” → background turns color said</p>
+    <p>Say “navigate to page” → goes to said page</p>
+    <button onclick="annyang.start()">Turn On Audio</button>
+    <button onclick="annyang.abort()">Turn Off Audio</button>
+  </div>
+</body>

@@ -1,0 +1,31 @@
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="annyang.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <h1>HOME</h1>
+  <button class="custom" onclick="location.href='stocks.html'">Stocks</button>
+  <button class="custom" onclick="location.href='dogs.html'">Dogs</button>
+
+  <div id="quote"></div>
+
+  <div id="audio-instructions">
+    <p>Say “hello” → alerts Hello World</p>
+    <p>Say “change the color to insert color” → background turns color said</p>
+    <p>Say “navigate to page” → goes to said page</p>
+    <button onclick="annyang.start()">Turn On Audio</button>
+    <button onclick="annyang.abort()">Turn Off Audio</button>
+  </div>
+</body>
+
